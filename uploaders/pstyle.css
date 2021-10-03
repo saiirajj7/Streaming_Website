@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar{
+  background:transparent;
+  padding: 1rem 6rem !important;
+  z-index: 20;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar .navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.navbar .nav-item{
+transition:0.5s ease;
+}
+
+.navbar .nav-item .nav-link{
+    color: #131313 !important;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem !important;
+    font-weight: 700;
+}
+
+#Navbar > ul > li:nth-child(n) > a:hover {
+      color:white;
+}
+#Navbar > ul > li:nth-child(n) > a:active{
+      color:white;
+}
+.navbar .btn{
+    margin-left: 10px;
+    font-weight: 580;
+    background:#FFF6E4;
+    padding: 0.2rem 1.4rem;
+    border-radius:20px;
+    color: #000 !important;
+  }
+
+  .navbar .btn:hover{
+    background: whitesmoke;
+  }
+
+  .mid {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mid video {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+  }
+
+  .writeup {
+    position: relative;    
+  }
+  .writeup h5{
+    font-weight: 900;
+    
+  }
+  .writeup p {
+    width: 55%;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+  }
+  .writeup .check{
+    z-index: 50;
+    opacity:60;
+  }
+  .writeup a {
+    font-weight: 600;
+    color:white;
+    background: #FFF6E4;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  .writeup a:hover {
+    background: white;
+  }
+
+.saving .text{  z-index:2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.saving .text h5{
+  font-weight: 700;
+  color:black;
+  font-size:4rem;
+}
+
+
+.saving .text p{
+  color:black;
+  font-size: 1.1rem;
+  /* letter-spacing: 2px; */
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.saving .text a{
+  background: black;
+  font-weight: 600;
+  padding: 0.7rem 4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.saving .text a:hover{
+  color:#FFF6E4;
+}
+
+
+.page {
+  background-color: black;
+}
+.page .first {           
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 1.1rem;
+  
+}
+.page .first h5 {
+  margin: auto;
+  color:white;
+  font-weight: 500;
+  padding: 0.6rem 0.6rem;
+}
+.page .first p {           
+  color:white;
+  font-weight: 500;
+  padding: 0.6rem 3rem;
+}
+
+.sigin .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.sigin .text h6 {
+  font-weight: 600;
+  color: green;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.sigin .text h2 {
+  color: black;
+  font-weight: 600;
+  font-size: 2.7rem;
+}
+
+.sigin .text p {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.sigin .text a {
+  background: black;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+.sigin .text a:hover {
+  color: green;
+}
+body
+  > footer
+  > ul.list-unstyled.list-inline.text-center.py-2
+  > li:nth-child(2)
+  > a {
+  font-weight: 600;
+  background: green;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+body
+  > footer
+  > ul.list-unstyled.list-inline.text-center.py-2
+  > li:nth-child(2)
+  > a:hover {
+  background: white;
+}
+.first:hover {
+  transform: translateY(-1rem);
+  transform: 0.5s ease;
+}
