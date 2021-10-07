@@ -32,7 +32,7 @@ transition:0.5s ease;
 }
 
 #Navbar > ul > li:nth-child(n) > a:hover {
-      color:white;
+      color: #FFF6E4 !important;
 }
 #Navbar > ul > li:nth-child(n) > a:active{
       color:white;
@@ -142,7 +142,7 @@ transition:0.5s ease;
 }
 
 
-.page {
+.page { 
   background-color: #526654;
 }
 .page .first {           
@@ -219,7 +219,7 @@ transition:0.5s ease;
 }
 
 .sigin .text a:hover {
-  color: green;
+  background: #526654;
 }
 body
   > footer
@@ -227,7 +227,7 @@ body
   > li:nth-child(2)
   > a {
   font-weight: 600;
-  background: green;
+  background: #526654;
   padding: 0.6rem 1.4rem;
   border-radius: 30px;
   text-decoration: none;
@@ -247,12 +247,12 @@ footer{
   position: absolute;
   left: 0;
   right: 0;
-  background: #111;
+  background: #111111;
   height: auto;
   width: 100%;
   font-family: "Open Sans";
   padding-top: 40px;
-  color: #fff;
+  color: #F3F8F9;
 }
 .footer-content{
   display: flex;
@@ -263,7 +263,7 @@ footer{
 }
 .footer-content h3{
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
 }
@@ -272,6 +272,7 @@ footer{
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
+  color: #b5b2bd;
 }
 .socials{
   list-style: none;
@@ -285,7 +286,7 @@ footer{
 }
 .socials a{
   text-decoration: none;
-  color: #fff;
+  color:#F3F8F9;
 }
 .socials a i{
   font-size: 1.1rem;

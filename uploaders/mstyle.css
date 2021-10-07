@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: #1a1a2e;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar{
+  background:#131313;
+  padding: 1rem 6rem !important;
+  z-index: 20;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar .navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.navbar .nav-item{
+transition:0.5s ease;
+}
+
+.navbar .nav-item .nav-link{
+    color: whitesmoke !important;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem !important;
+    font-weight: 500;
+}
+
+#Navbar > ul > li:nth-child(n) > a:hover {
+      color: #FFF6E4 !important;
+}
+#Navbar > ul > li:nth-child(n) > a:active{
+      color:white;
+}
+.navbar .btn{
+    margin-left: 10px;
+    font-weight: 500; 
+    background:#FFF6E4;
+    padding: 0.2rem 1.4rem;
+    border-radius:20px;
+    color: #131313 !important;
+  }
+
+  .navbar .btn:hover{
+    background: whitesmoke;
+  }
+
+    .masthead {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: 
+        url("https://th.bing.com/th/id/OIP.X47DnCftNI_iqPPEbMPcfgHaFL?w=297&h=208&c=7&r=0&o=5&dpr=1.25&pid=1.7");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .masthead h1 {
+      z-index:1000;
+      text-transform: uppercase;
+      font-size: 5rem !important;    
+      color:whitesmoke;
+
+    }
+    
+    /* @media (max-width: 1140px) {
+      .masthead {
+        height: 100vh;
+      }
+      .masthead h1 {
+        font-size:8rem;
+      }
+    } */
+    
+    .btn-xl {
+      padding: 1.25rem 2.5rem;
+      text-transform: uppercase;
+      background-color: #d35d6e;
+      border: none;
+      color: #fff;
+
+    }
+    
+    .btn-lg:hover {
+      background-color: #fd3a69;
+      color: #000;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+    }
+    @media (max-width:1430px) {
+      .masthead {
+        height: 80vh;
+      }
+      .masthead h1 {
+        font-size: 5rem !important;
+
+      }
+      .btn-xl {
+        text-transform: uppercase;
+        background-color: #d35d6e;
+        border: none;
+        color: #fff;
+
+      }
+      
+      .btn-lg:hover {
+        background-color: #fd3a69;
+        color: #000;
+
+      }
+    }
+    @media (max-width:770px) {
+      .masthead {
+        height: 50vh;
+      }
+      .masthead h1 {
+        font-size: 4rem !important;
+
+      }
+      .btn-xl {
+        text-transform: uppercase;
+        background-color: #d35d6e;
+        border: none;
+        color: #fff;
+
+      }
+      
+      .btn-lg:hover {
+        background-color: #fd3a69;
+        color: #000;
+      }
+    }
+  
+    @media (max-width:560px) {
+      .masthead {
+        height: 50vh;
+      }
+      .masthead h1 {
+        font-size: 3rem !important;
+      }
+      .btn-xl {
+        padding: 0.9rem 1rem !important;
+        text-transform: uppercase;
+        background-color: #d35d6e;
+        border: none;
+        color: #fff;
+      }
+      
+      .btn-lg:hover {
+        background-color: #fd3a69;
+        color: #000;
+      }
+    }
+#UpcomingMovies{
+  background-color: #1a1a2e;
+}
+    .Container {      
+      margin: 2% 2% 0 3%;
+    }
+    .Movies img {
+      margin-right: 1%;
+      margin-bottom: 10%;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: -4px 4px 5px 0 #000;
+      transition: 0.8s;
+    }
+    
+    .Movies img:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+    
+    .Container h2 {
+      font-family: 'Lora', serif;
+      margin-bottom: 4%;
+      color: #f3e6e3;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    
