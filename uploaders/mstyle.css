@@ -86,9 +86,9 @@ transition:0.5s ease;
       padding: 1.25rem 2.5rem;
       text-transform: uppercase;
       background-color: #d35d6e;
+      border-radius:0.6rem ;
       border: none;
       color: #fff;
-
     }
     
     .btn-lg:hover {
@@ -109,21 +109,15 @@ transition:0.5s ease;
       }
       .masthead h1 {
         font-size: 5rem !important;
-
       }
       .btn-xl {
         text-transform: uppercase;
         background-color: #d35d6e;
+        border-radius:0.6rem ;
         border: none;
         color: #fff;
-
-      }
+      }   
       
-      .btn-lg:hover {
-        background-color: #fd3a69;
-        color: #000;
-
-      }
     }
     @media (max-width:770px) {
       .masthead {
@@ -136,9 +130,9 @@ transition:0.5s ease;
       .btn-xl {
         text-transform: uppercase;
         background-color: #d35d6e;
+        border-radius:0.6rem ;
         border: none;
         color: #fff;
-
       }
       
       .btn-lg:hover {
@@ -158,6 +152,8 @@ transition:0.5s ease;
         padding: 0.9rem 1rem !important;
         text-transform: uppercase;
         background-color: #d35d6e;
+        border-radius:0.6rem ;
+
         border: none;
         color: #fff;
       }
@@ -197,3 +193,275 @@ transition:0.5s ease;
       text-align: center;
     }
     
+
+
+    .img-slider{
+      /* position: relative;
+      width: 800px;
+      height: 500px;
+      margin: 10px;
+      background: #1D212B; */
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+    }
+    
+    .img-slider .slide{
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      clip-path: circle(0% at 0 50%);
+    }
+    
+    .img-slider .slide.active{
+      clip-path: circle(150% at 0 50%);
+      transition: 2s;
+      transition-property: clip-path;
+    }
+    
+    .img-slider .slide img{
+      z-index: 1;
+      width: 100%;
+      border-radius: 5px;
+    }
+    
+    .img-slider .slide .info{
+      position: absolute;
+      top: 0;
+      padding: 15px 30px;
+    }
+    
+    .img-slider .slide .info h1{
+     
+      /* font-weight: 800;
+      letter-spacing: 2px; */
+
+      z-index:1000;
+      text-transform: uppercase;
+      font-size: 5rem !important;    
+      color:whitesmoke;
+    }
+    
+    .img-slider .slide .info p{
+      color: #fff;
+      background: rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      width: 60%;
+      padding: 10px;
+      border-radius: 4px;
+    }
+     .img-slider .slide .info a{
+      padding: 1.25rem 2.5rem;
+      text-transform: uppercase;
+      background-color: #d35d6e;
+      border-radius:0.6rem ;
+      border: none;
+      color: #fff;
+    }
+    .img-slider .navigation{
+      z-index: 200;
+      position: absolute;
+      display: flex;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .img-slider .navigation .btn{
+      background: rgba(255, 255, 255, 0.5);
+      padding: 7px;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 2px 2px;
+    }
+    
+    .img-slider .navigation .btn.active{
+      background: #2696E9;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    @media (max-width: 1430px){
+      .img-slider{
+        height: 80vh;
+      }
+    
+      .img-slider .slide .info{
+        padding: 10px 25px;
+      }
+    
+      .img-slider .slide .info h1{
+        font-size: 5rem !important;    
+      }
+    
+      .img-slider .slide .info p{
+        width: 70%;
+        font-size: 15px;
+      }
+    
+      .img-slider .navigation{
+        bottom: 25px;
+      }
+    
+      .img-slider .navigation .btn{
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+      }
+    }
+    
+    @media (max-width:770px){
+      .img-slider{      
+        height: 50vh;
+      }
+    
+      .img-slider .slide .info{
+        padding: 10px 20px;
+      }
+    
+      .img-slider .slide .info h1{
+        font-size: 4rem !important;    
+      }
+    
+      .img-slider .slide .info p{
+        width: 60%;
+        font-size: 1rem;
+      }
+      .img-slider .slide .info a{
+        padding: 0.9rem 1rem !important;    
+      }
+      .img-slider .navigation{
+        bottom: 15px;
+      }
+    
+      .img-slider .navigation .btn{
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+      }
+    }
+    
+    @media (max-width: 560px){
+      .img-slider{
+        height: 50vh;
+      }
+    
+      .img-slider .slide .info{
+        padding: 5px 10px;
+      }
+    
+      .img-slider .slide .info h1{
+        font-size: 2.5rem !important;    
+      }
+    
+      .img-slider .slide .info p{
+        width: auto;
+        font-size: 0.9rem;
+      }
+      .img-slider .slide .info a{
+        padding: 0.9rem 0.5rem !important;    
+      }
+    
+      .img-slider .navigation{
+        bottom: 10px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer{
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #111111;
+      height: auto;
+      width: 100%;
+      font-family: "Open Sans";
+      padding-top: 40px;
+      color: #F3F8F9;
+    }
+    .footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-content h3{
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 3rem;
+    }
+    .footer-content p{
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+      color: #b5b2bd;
+    }
+    .socials{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+    }
+    .socials li{
+      margin: 0 10px;
+    }
+    .socials a{
+      text-decoration: none;
+      color:#F3F8F9;
+    }
+    .socials a i{
+      font-size: 1.1rem;
+      transition: color .4s ease;
+    
+    }
+    .socials a:hover i{
+      color: aqua;
+    }
+    
+    .footer-bottom{
+      background: #000;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer-bottom p{
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+    }
+    .footer-bottom span{
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+    }
+    .footer-bottom a{
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+      text-decoration:underline;
+      color:#d6c39e;
+    }
