@@ -1,3 +1,14 @@
+function openFunction(){
+  document.getElementById("menu").style.width="300px";
+  document.getElementById("mainbox").style.marginLeft="200px";
+ }
+function closeFunction(){
+ document.getElementById("menu").style.width="0px";
+ document.getElementById("mainbox").style.marginLeft="0px";
+}
+
+
+
 var slides = document.querySelectorAll('.slide');
     var btns = document.querySelectorAll('.btn');
     let currentSlide = 1;
@@ -50,3 +61,5 @@ var slides = document.querySelectorAll('.slide');
       repeater();
     }
     repeat();
+
+   

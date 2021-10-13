@@ -8,13 +8,53 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  background:#526654;
+}
+
+#mainbox{
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all .6s;
+  color: white;
+
+ }
+ .sidemenu{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 0px;
+  background-color: #526654;
+  z-index: 1000;
+  padding-top: 100px;
+  overflow-x: hidden;
+  transition: all .5s;
+ }
+ .sidemenu a{
+  padding: 8px 8px 8px 64px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(199, 199, 199);
+  display: block;
+ }
+ .sidemenu a:hover{
+   color: white;
+ }
+ .sidemenu .closebtn{
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 32px;
+ }
 .navbar{
   background:transparent;
   padding: 1rem 6rem !important;
   z-index: 20;
 }
 .navbar-nav{
-    margin-left: auto;
+    margin-left:auto;
 }
 .navbar .navbar-brand{
     font-size: 1.4rem;
@@ -23,12 +63,22 @@ html {
 .navbar .nav-item{
 transition:0.5s ease;
 }
-
+.navbar .navbar-brand img{
+  height:3.1rem;
+  width: auto;
+}
 .navbar .nav-item .nav-link{
     color: whitesmoke !important;
-    font-size: 1.2rem;
-    padding: 0.5rem 2rem !important;
-    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 3rem !important;
+    font-weight: 400;
+    border-right: 1px solid #747474;
+    line-height: 0.2rem;
+    text-transform: uppercase;
+}
+
+#Navbar > ul > li:nth-child(4) > a{
+  border-right: none;  
 }
 
 #Navbar > ul > li:nth-child(n) > a:hover {
@@ -41,7 +91,7 @@ transition:0.5s ease;
     margin-left: 10px;
     font-weight: 500; 
     background:#FFF6E4;
-    padding: 0.2rem 1.4rem;
+    padding: 0.2rem 2.4rem;
     border-radius:20px;
     color: #131313 !important;
   }

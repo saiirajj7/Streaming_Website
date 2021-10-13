@@ -6,16 +6,50 @@
   font-family: "Poppins", sans-serif;
 }
 body{
-  background-color: #1a1a2e;
-
+  background:#1a1a2e;
 }
 html {
   scroll-behavior: smooth;
 }
+#mainbox{
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all .6s;
+  color: white;
+
+ }
+ .sidemenu{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 0px;
+  background-color: #222;
+  z-index: 1;
+  padding-top: 100px;
+  overflow-x: hidden;
+  transition: all .5s;
+ }
+ .sidemenu a{
+  padding: 8px 8px 8px 64px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #999;
+  display: block;
+ }
+ .sidemenu a:hover{
+   color: white;
+ }
+ .sidemenu .closebtn{
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 32px;
+ }
 .navbar{
-  background:#111111;
-  padding: 1rem 6rem !important;
   z-index: 20;
+  padding: 0.4rem 6rem !important;
 }
 .navbar-nav{
     margin-left: auto;
@@ -23,6 +57,10 @@ html {
 .navbar .navbar-brand{
     font-size: 1.4rem;
     font-weight: 600;
+}
+.navbar .navbar-brand img{
+  height:3rem;
+  width: auto;
 }
 .navbar .nav-item{
 transition:0.5s ease;
@@ -201,14 +239,16 @@ transition:0.5s ease;
       height: 500px;
       margin: 10px;
       background: #1D212B; */
+      
       display: flex;
       position: relative;
       width: 100%;
-      height: 100vh;
+      height:100vh;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
+    
     }
     
     .img-slider .slide{
