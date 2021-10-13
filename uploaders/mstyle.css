@@ -36,6 +36,7 @@ html {
   font-size: 20px;
   color: #999;
   display: block;
+  text-transform: capitalize;
  }
  .sidemenu a:hover{
    color: white;
