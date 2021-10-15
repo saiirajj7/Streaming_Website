@@ -10,8 +10,7 @@
 <body>
   <section>
     <div class="container">
-      <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">
-  
+      <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">  
         <div class="form-group">
           <label for="firstName"> First Name</label>
           <input type="text" id="firstName" name="firstName">
@@ -31,59 +30,32 @@
           <label for="massage">Massage</label>
           <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
         </div>
-  
+        <input type="file" id="real-file" hidden="hidden" />
+        <button type="button" id="custom-button">CHOOSE A FILE</button>
+        <span id="custom-text">No file chosen, yet.</span>
         <button type="submit">Submit</button>
       </form>
     </div>
     <div id="status"></div>
   </section>
-  <script>
-    window.addEventListener("DOMContentLoaded", function () {
-  // get the form elements defined in your form HTML above
+ <script>
+    const realFileBtn = document.getElementById("real-file");
+    const customBtn = document.getElementById("custom-button");
+    const customTxt = document.getElementById("custom-text");
 
-  var form = document.getElementById("my-form");
-  // var button = document.getElementById("my-form-button");
-  var status = document.getElementById("status");
+    customBtn.addEventListener("click", function() {
+      realFileBtn.click();
+    });
 
-  // Success and Error functions for after the form is submitted
-
-  function success() {
-    form.reset();
-    status.classList.add("success");
-    status.innerHTML = "Thanks!";
-  }
-
-  function error() {
-    status.classList.add("error");
-    status.innerHTML = "Oops! There was a problem.";
-  }
-
-  // handle the form submission event
-
-  form.addEventListener("submit", function (ev) {
-    ev.preventDefault();
-    var data = new FormData(form);
-    ajax(form.method, form.action, data, success, error);
-  });
-});
-
-// helper function for sending an AJAX request
-
-function ajax(method, url, data, success, error) {
-  var xhr = new XMLHttpRequest();
-  xhr.open(method, url);
-  xhr.setRequestHeader("Accept", "application/json");
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    if (xhr.status === 200) {
-      success(xhr.response, xhr.responseType);
-    } else {
-      error(xhr.status, xhr.response, xhr.responseType);
-    }
-  };
-  xhr.send(data);
-}
-
-  </script>
+    realFileBtn.addEventListener("change", function() {
+      if (realFileBtn.value) {
+        customTxt.innerHTML = realFileBtn.value.match(
+          /[\/\\]([\w\d\s\.\-\(\)]+)$/
+        )[1];
+      } else {
+        customTxt.innerHTML = "No file chosen, yet.";
+      }
+    });
+ </script>
 </body>
 </html>
