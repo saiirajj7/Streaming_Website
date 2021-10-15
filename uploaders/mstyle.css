@@ -11,6 +11,7 @@ body{
 html {
   scroll-behavior: smooth;
 }
+
 #mainbox{
   font-size: 2rem;
   cursor: pointer;
@@ -72,6 +73,7 @@ transition:0.5s ease;
     font-size: 1.2rem;
     padding: 0.5rem 2rem !important;
     font-weight: 500;
+    text-transform:uppercase;
 }
 
 #Navbar > ul > li:nth-child(n) > a:hover {
@@ -467,12 +469,41 @@ transition:0.5s ease;
       justify-content: center;
       margin: 1rem 0 3rem 0;
     }
-    .socials li{
+    .nbar{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+    }
+    .nbar li{
+      margin: 0 10px;
+    }
+    .nbar a{
+      text-decoration: none;
+      color:#F3F8F9;
+      border-right: 1px solid #F3F8F9;
+      padding: 0rem 3rem !important;
+      text-transform: uppercase;
+
+    }
+    .nbar a i{
+      font-size: 1.1rem;
+      transition: color .4s ease;
+    
+    }
+    .nbar a:hover i{
+      color: aqua;
+    }
+    
+    .nbar li{
       margin: 0 10px;
     }
     .socials a{
       text-decoration: none;
       color:#F3F8F9;
+      padding:0rem 0.5rem;
+
     }
     .socials a i{
       font-size: 1.1rem;
